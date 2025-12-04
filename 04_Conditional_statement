@@ -1,0 +1,134 @@
+
+
+# =================== CONDITONAL STATEMENT ================================
+
+
+# SYNTAX -->
+
+# if(condition):
+#     statment
+# elif(condition):
+#     statement
+# else:
+#     False statement    
+
+
+# colors = input("Enter the colord :")
+
+# if(colors.lower() == "red"):
+#     print("Stop Here . 🛑")
+# elif( colors.lower() == "green"):
+#     print("GO , Good Luck ")
+# elif(colors.lower()== "yellow"):
+#     print(" Ready to drive")
+# else:
+#     print("light is Broken")
+
+
+# --> Grade of student .
+
+# marks = int(input("Enter the student Marks :"))
+
+
+# if(marks <= 100 and marks > 90):
+#     print("Student Got Grade A++");
+# elif(marks <= 90 and marks >70):
+#     print("Student got Grade B");
+# elif( marks <= 70 and marks >=60):
+#     print("Student got Grade C");
+# else:
+#     print( "Fail..");
+
+
+# =====. SINGLE LINE IF // TERNARY OPERATORS =========
+
+
+# food = input("Enter the food :");
+# eat = "yes" if (food.lower()== "cake") else "no"
+# print(eat)
+
+
+# sweets = input("Enter the sweets name :");
+# print("sweets !") if(sweets.lower()== "jalebi") else print("Not sweets")
+
+# ---> clever ternary operators .
+
+# <Variable> = (false_val , true_val)[condtion]
+
+# age = 10;
+
+# voteCast = ("no","yes")[age >= 18]
+# print(voteCast)
+
+
+#===== Best Practice =============
+# 1 . Single Instructon 
+# 2 . One instructuon per task 
+# 3 . short and meaningfull variable name'
+# 4 . use appropreate comment 
+# 5 . avoid complex expression 
+
+
+# To calculate the simple intrest 
+
+# principal = int(input( "Enter the principal :"))
+# Rate = int(input( "Enter the Rate :"))
+# time = int(input( "Enter the time :"))
+
+# simpleIntrest = (principal*Rate*time)/100
+
+# print(simpleIntrest)
+
+
+
+#  conditional statment 
+
+# Basic if else
+
+n = 3
+if(n % 2 == 0):
+    print("Number is Even");
+else:
+    print("Number is odd ")
+
+# 1.2 Elif (Else-If)
+
+#  it check the multiple constion 
+x = 10
+
+if x > 15:
+    print("x > 15")
+elif x > 5:
+    print("x is between 6 and 15")
+else:
+    print("x <= 5")
+
+
+
+#  Nested if elss
+
+x = 20
+y = 30
+
+if x > 10:
+    if y > 25:
+        print("x > 10 and y > 25")
+
+
+#  Conditonal Expression (ternary Opraator)
+x = 10
+result = "High" if x > 5 else "Low"
+print(result)
+
+
+
+# Logical Operators 
+
+x, y = 10, 5
+
+if x > 5 and y < 10:
+    print("Both conditions True")
+if x > 5 or y > 10:
+    print("At least one condition True")
+if not x < 5:
+    print("x >= 5")

@@ -1,0 +1,148 @@
+# =================  TYPE COVERSION =============================
+
+# Type Converiosn means to automatically or manualy changed the one datatype to another one
+
+# 1 . ->  Implicite type converision
+# 2 . -> Explicite type Casting
+
+
+
+# 1 . ->  Implicite type converision 
+
+# --> python automaticaly convert smaller datatype to larger one without loss of data.
+
+num1 = 5 ; # integer
+num2 = 2.5 # float 
+sum = num1 + num2 #  5 + 3.5 = 8.5 integer + float -> float Implicite type conversion .
+
+
+# Practice = try a adding a string and integer, then see what happenig
+
+# --> throe Error 
+
+# str = "hello"
+# num =10
+# sum = str + num
+# print(sum)
+
+
+
+# 2 . -> Explicite type Casting
+
+# you manually changr the data type 
+
+
+# Example 1 .  string --> Integer
+
+a="20";
+b = int(a)
+print(b + 20) # "20"-> 20 +20 = 40
+
+# Example 2 .  Float --> Integer
+a = 9.8
+b = int(a)
+print(b)  # 9
+
+
+# Example 3 .  integer --> string
+
+x = 25
+y = str(x)
+print(y + " years")  # "25 years"
+
+
+# Examplr 4 List --> tuple
+
+a = [1, 2, 3]
+b = tuple(a)
+print(b)  # (1, 2, 3)
+
+
+# Examplr 4 List --> tuple
+
+word = "Python"
+letters = list(word)
+print(letters)  # ['P', 'y', 't', 'h', 'o', 'n']
+
+
+# Commmon type casting errors 
+
+# a = "abc"
+# b = int(a)   # ❌ Error → cannot convert letters to int
+
+
+# a = "12.5"
+# b = int(a)   # ❌ Error → invalid literal for int()
+
+# a = "12.5"
+# b = float(a)
+# print(b)  # 12.5
+
+
+
+# Boolean Conversion Rule 
+
+# in, Python these values are false 
+
+
+0 , 0.0
+None
+""
+[],{},() # list , set. tuple
+
+
+# Convert a string "25" to int and multiply it by 2.
+
+str1 = "25"
+mul = int(str1)*2
+print(mul) # 50
+
+# Convert float 7.5 to int and observe the output.
+
+flaot = 7.5
+print(int(flaot))
+
+# Convert integer 100 to a string and concatenate with "points".
+
+num = 100;
+b = str(num)
+print(b + ".00")
+
+# Convert a list [1, 2, 2, 3] to a set.
+
+
+# Convert string "Python" to a list of characters.
+
+name = "vishal"
+list1 = list(name)
+print(list1)
+
+# Input two numbers as strings, convert them to integers, and print their sum.
+
+# num1 = str(input("Enter the string as number1"))
+# num2 = str(input("Enter the string as number2"))
+
+# sum = int(num1) + int(num2);
+# print("sum : ", sum)
+
+# Convert tuple (10, 20, 30) into a list and add a new element 40.
+
+tpl = (10 ,20, 30);
+print(list(tpl))
+
+# Convert dictionary {'a': 1, 'b': 2} into a list of tuples.
+
+# Convert float "45.67" (as string) to float and print its integer value.
+
+# Check what bool(""), bool(0), and bool("0") return.
+
+
+# Take input of price and quantity as strings, calculate total using type casting.
+
+# Convert a string "5+3j" into a complex number and print its real and imaginary parts.
+
+# Create a program that asks user for their age (string input) and checks if they are 18+.
+
+# Convert a list of string numbers ["1", "2", "3"] into integers and find their sum.
+
+# Write a function that takes a list of mixed types and converts all numeric strings to integers.
