@@ -1,6 +1,5 @@
 from ..models.book import Book
 from ..models.members import Member
-
 import os
 
 class Services:
@@ -90,14 +89,13 @@ class Services:
         self._update_books_file()
         return "Book returned successfully"
 
-    # Find book by ID
+  
     def find_book(self, book_id):
         for b in self.books:
             if b.book_id == book_id:
                 return b
         return None
 
-    # Find member by ID
     def find_member(self, member_id):
         for m in self.members:
             if m.member_id == member_id:
@@ -112,13 +110,13 @@ class Services:
                 issued = b.issued_to if b.issued_to else "None"
                 f.write(f"{b.title},{b.author},{b.book_id},{issued}\n")
 
-    # View books
+
     def view_books(self):
         print("\n---- Book List ----")
         for b in self.books:
             print(b)
 
-    # View members
+
     def view_members(self):
         print("\n---- Members List ----")
         for m in self.members:

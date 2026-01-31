@@ -7,7 +7,6 @@
 str1 = "this is the duble qoute"
 str2 = 'this is the single qoute'
 str3 = """ this is the triple qoute"""
-
 str4 =" this is the escape sequnce chat example , \n i want to ptint thid line into the next line"
 
 print(str4)

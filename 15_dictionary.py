@@ -85,6 +85,12 @@ del dict_name["newKey"]
 
 print(dict_name)
 
+'''
+ del keyword delet the key value and does not return any value 
+ if the key does not exist then throw the error key error 
+ 
+'''
+
 # Clear the all dictionary 
 
 # dict_name.clear()
