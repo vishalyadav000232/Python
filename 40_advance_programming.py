@@ -351,3 +351,29 @@ with ThreadPoolExecutor(max_workers=3) as ex:
     results = list(ex.map(work, [1, 2, 3, 4, 5]))
 
 print(results)
+
+
+
+'''
+
+Date --> 18 / 03 / 2026
+
+
+Multithreafding in python 
+
+
+
+'''
+
+from threading import Thread
+import time
+
+def task():
+    time.sleep(2)
+    print("Thread done")
+
+t = Thread(target=task)
+t.start()
+t.join()
+
+print("Main done")

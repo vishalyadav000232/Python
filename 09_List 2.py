@@ -93,3 +93,8 @@ del temperature  # Deletes the entire list variable
 fruits = [ "apple", "kela", "amrud",]
 for val in fruits:
     print(val)
+    
+    
+    
+list2 = [w for w in fruits if w == "kelaa"]
+print(list2)

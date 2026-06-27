@@ -99,8 +99,9 @@ with open("logo.png", "rb") as src:
     data = src.read()
 
 encoded = base64.b64encode(data)
+print(encoded)
 
-with open("image.txt", "wb") as f:
+with open("binarywalafile.txt", "wb") as f:
     f.write(encoded)
 
 
@@ -178,7 +179,7 @@ with open("students.csv", "w", newline="") as f:
     writer.writeheader()
     writer.writerow({"name": "Vishal", "age": 21})
 
-
+ 
 # reader
 
 
